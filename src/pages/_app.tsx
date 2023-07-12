@@ -1,0 +1,7 @@
+import { AppProps } from "next/app";
+
+function myApp({Component, pageProps}: AppProps) {
+    return <Component{...pageProps} />;
+}
+
+export default myApp
