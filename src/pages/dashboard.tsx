@@ -1,13 +1,9 @@
 import { Header } from "@/components/Header";
 import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import { Sidebar } from "@/components/Sidebar";
-import ApexCharts from 'apexcharts';
+import  ApexChart  from "react-apexcharts";
+import NewChart from '../components/Chart';
 
-const options = {};
-
-const series = [
-    {name: 'series1', data: [31, 120, 10, 28, 51, 18, 109]}
-];
 
 
 export default function Dashboard (){
@@ -23,6 +19,7 @@ export default function Dashboard (){
                     <Box p='8' bg='gray.800' borderRadius={8} pb='4'>
                         <Text fontSize='lg' mb='4'> 
                             Inscritos da semana
+                            
                         </Text>
                        
                     </Box>
