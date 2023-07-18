@@ -1,6 +1,6 @@
 import { Header } from '@/components/Header';
 import { Sidebar } from '@/components/Sidebar';
-import { Input } from '@/components/form/Input';
+import { Input } from '@/components/Form/Input';
 import {Box, Flex, Heading, Divider, VStack, SimpleGrid, HStack, Button} from '@chakra-ui/react';
 
 
