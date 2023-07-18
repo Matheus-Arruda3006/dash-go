@@ -1,7 +1,8 @@
 import { Header } from '@/components/Header';
+import { Pagination } from '@/components/Pagination';
 import { Sidebar } from '@/components/Sidebar';
 import {Box, Flex, Heading, Button, Icon, Table, Thead, Th, Tr, Td, Checkbox, Tbody, Text} from '@chakra-ui/react';
-import { RiAddLine } from 'react-icons/ri';
+import { RiAddLine, RiPencilLine } from 'react-icons/ri';
 
 
 
@@ -36,6 +37,9 @@ export default function UserList() {
                                 <Th>
                                     Data de cadastro
                                 </Th>
+                                <Th>
+
+                                </Th>
                             </Tr>
                         </Thead>
                         <Tbody>
@@ -49,10 +53,16 @@ export default function UserList() {
                                         <Text fontSize='sm' color='gray.300' >matheusarrudaf@gmail.com</Text>
                                     </Box>
                                 </Td>
+                                <Td>30 de junho, 2023</Td>
+                                <Td>
+                                     <Button as='a' size='sm' fontSize='sm' colorScheme='purple' leftIcon={<Icon as={RiPencilLine} fontSize='16'/>}>
+                                        Editar
+                                     </Button>
+                                </Td>
                             </Tr>
                         </Tbody>
                     </Table>
-
+                    <Pagination/>
                 </Box>
             </Flex>
 
